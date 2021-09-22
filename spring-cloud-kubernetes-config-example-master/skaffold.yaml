@@ -1,0 +1,18 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: config-example-image
+      jib: {}
+
+#    - image: config-example
+#      docker:
+#        dockerfile: Dockerfile
+#  local: {}
+
+deploy:
+  kubectl:
+    manifests:
+      - roles.yml
+      - config.yaml
+      - deploy.yaml
