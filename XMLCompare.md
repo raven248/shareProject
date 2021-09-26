@@ -31,3 +31,5 @@ public class AppTest {
   <scope>test</scope>
 </dependency>
 ```
+
+https://stackoverflow.com/questions/51428038/comparing-xml-equal-files-except-for-whitespace-with-xmlunit-produces-differen
